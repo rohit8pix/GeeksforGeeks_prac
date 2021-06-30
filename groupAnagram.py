@@ -1,12 +1,9 @@
 from collections import defaultdict
-def Anagrams(words,n):
+def Anagrams(words):
     '''
-    words: list of word
-    n:      no of words
+    words: list of words
     return : list of group of anagram
     '''
-    
-    #code here
     anag=defaultdict(list)
 	  for ele in words:
 		  k=tuple(sorted(ele))  # sorted the characters of the word and made it tuple --- this is our KEY
