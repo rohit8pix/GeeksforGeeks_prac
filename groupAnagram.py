@@ -9,6 +9,6 @@ def Anagrams(words,n):
     #code here
     anag=defaultdict(list)
 	  for ele in words:
-		  k=tuple(sorted(ele))
-		  anag[k].append(ele)
+		  k=tuple(sorted(ele))  # sorted the characters of the word and made it tuple --- this is our KEY
+		  anag[k].append(ele)   # if elements of words list match KEY then we store the word as VALUES
 	  return(list(anag.values()))
